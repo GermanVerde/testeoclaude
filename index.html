@@ -3,38 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Primer Proyecto</title>
+    <title>Galaxy Blender</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
         body {
-            font-family: Arial, sans-serif;
-            display: flex;
-            justify-content: center;
-            align-items: center;
             height: 100vh;
-            margin: 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 0;
+        }
+        
+        .section {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+        }
+        
+        .section1 {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            font-family: 'Arial', sans-serif;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
         }
-        .container {
-            text-align: center;
-            background: white;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+        
+        .section2 {
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            font-family: 'Georgia', serif;
+            letter-spacing: 3px;
+            font-style: italic;
         }
-        h1 {
+        
+        .section3 {
+            background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);
             color: #333;
-            margin: 0;
+            font-family: 'Courier New', monospace;
+            border-left: 10px solid #00f2fe;
+            padding-left: 20px;
         }
-        p {
-            color: #666;
-            margin-top: 10px;
+        
+        .section4 {
+            background: linear-gradient(135deg, #43e97b 0%, #38f9d7 100%);
+            color: #222;
+            font-family: 'Comic Sans MS', cursive;
+            transform: skew(-10deg);
+            text-decoration: underline wavy;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>¡Hola! 👋</h1>
-        <p>Este es mi primer proyecto con Git</p>
-    </div>
+    <div class="section section1">Hola mundo</div>
+    <div class="section section2">Hola mundo</div>
+    <div class="section section3">Hola mundo</div>
+    <div class="section section4">Hola mundo</div>
 </body>
 </html>
